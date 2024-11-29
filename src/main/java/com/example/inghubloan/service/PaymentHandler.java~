@@ -1,0 +1,9 @@
+package com.example.inghubloan.service;
+
+import com.example.inghubloan.dto.LoanPaymentRequest;
+import com.example.inghubloan.dto.PaymentResponse;
+import com.example.inghubloan.entity.Loan;
+
+public interface PaymentHandler {
+    PaymentResponse handle(LoanPaymentRequest request, Loan loan);
+}
